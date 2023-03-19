@@ -1,5 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, AttachmentBuilder } = require('discord.js');
 
+const { taglines } = require('../taglines.json');
+
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -21,7 +23,7 @@ module.exports = {
     const attachment = new AttachmentBuilder(bunnyPath);
 
     const embed = new EmbedBuilder()
-        .setTitle('Here\'s a random bunny!')
+        .setTitle(taglines[Math.floor(Math.random() * taglines.length)])
         .setColor('#0099ff')
         .setImage(`attachment://${randomBunny}`);
         
