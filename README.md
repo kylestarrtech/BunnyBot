@@ -10,7 +10,7 @@ File formats supported are the same as the file formats Discord supports for ima
 
 Additionally there's a ping command, I did this as a test since it was my first time using Discord.js and I figured it's probably a good idea.
 
-If you intend to use a fork of this bot, on top of the Bunnies folder you will also need a config.json file. It should look like this:
+If you intend to use a fork of this bot, on top of the Bunnies folder you will also need a config.json file in the main directory. It should look like this:
 ```
 {
     "token": "[Discord Token Here]",
