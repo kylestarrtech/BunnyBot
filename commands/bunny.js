@@ -16,9 +16,9 @@ module.exports = {
     let randomBunny = bunnyFiles[randomIndex];
     let bunnyPath = path.join(__dirname, '..', 'Bunnies', randomBunny);
 
-    console.log(`Bunny file: ${randomBunny}`);
-    console.log(`Bunny index: ${randomIndex}`);
-    console.log(`Bunny path: ${bunnyPath}`);
+    // console.log(`Bunny file: ${randomBunny}`);
+    // console.log(`Bunny index: ${randomIndex}`);
+    // console.log(`Bunny path: ${bunnyPath}`);
 
     const attachment = new AttachmentBuilder(bunnyPath);
 
